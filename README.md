@@ -7,27 +7,14 @@
 
 **Carrera:** Ingeniería en Software  
 **Universidad:** Universidad Técnica de Ambato
-## 1. Análisis del Problema
 
-### Entradas
-- **N**: Cantidad de tickets a procesar (`int`)
-- **placa**: Identificador del vehículo (`String`)
-- **minutos**: Tiempo de permanencia (`int`, validación: `minutos > 0`)
-- **tipoCliente**: Tipo de cliente (`int`: `1` = Regular, `2` = VIP, `3` = Abonado)
+---
 
-### Procesos
-- Repetir para **N** tickets utilizando un ciclo `para` (`for`)
-- Validar `minutos > 0` con un bucle `repetir-hasta` (`do-while`)
-- Calcular tarifa mediante una estructura `según` (`switch`)
-  - **Opción 1 (Regular):** `tarifa = minutos * 0.05`
-  - **Opción 2 (VIP):** `tarifa = minutos * 0.03`
-  - **Opción 3 (Abonado):** `tarifa = 1.00`[cite: 1, 5]
-- Acumular ingresos: `ingresoTotal = ingresoTotal + tarifa`
-- Acumular minutos: `totalMinutos = totalMinutos + minutos`
-- Evaluar menor tiempo: si `minutos < menorTiempo`, guardar `menorTiempo = minutos` y `placaMenor = placa`
-- Calcular promedio: `promedio = totalMinutos / N`
+## Ejercicio Asignado: GRUPO 3 - ParkControl: Estacionamiento
+Desarrollo de un sistema en Java para el control de boletos de estacionamiento. El programa procesa $N$ tickets, valida que los minutos registrados sean mayores a 0 usando un bucle `do-while`, determina las tarifas a pagar mediante un `switch` condicional según el tipo de cliente, y calcula el ingreso total, el promedio de permanencia y el vehículo con menor tiempo registrado.
 
-### Salidas
-- **Ingreso total recaudado** ($)
-- **Promedio de permanencia** (minutos)
-- **Placa con el menor tiempo de permanencia**
+## Instrucciones para Compilar y Ejecutar
+1. Abrir la terminal en la carpeta `ejercicio-3`.
+2. Compilar el programa:
+   ```bash
+   javac Ejercicio3.java
