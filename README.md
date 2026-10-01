@@ -104,7 +104,7 @@ switch (tipoCliente) {
 System.out.printf("Tarifa calculada para este ticket: $%.2f\n", tarifaPagar);
 ```
 ---
-## Integrante 4: Métricas, Acumuladores y Reporte Final
+## Mateo Salazar: Métricas, Acumuladores y Reporte Final
 
 ### Aporte
 
