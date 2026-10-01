@@ -67,3 +67,40 @@ do {
 } while (minutos <= 0);
 ```
 ---
+### Integrante 3: Menú de Clientes y Cálculo de Tarifas
+
+* **Aporte:** Desarrollo del menú interactivo para la selección del tipo de cliente y cálculo de las tarifas aplicando una estructura condicional múltiple `switch`.
+* **Commit:** `"Implementa menu de clientes y calculo de tarifas mediante switch"`
+
+#### Código Implementado (Java)
+
+```java
+System.out.println("Seleccione el Tipo de Cliente:");
+System.out.println("1. Regular ($0.05 por minuto)");
+System.out.println("2. VIP ($0.03 por minuto)");
+System.out.println("3. Abonado (Tarifa fija de $1.00)");
+System.out.print("Opción (1-3): ");
+int tipoCliente = scanner.nextInt();
+scanner.nextLine();
+
+// Estructura switch para tarifa
+double tarifaPagar = 0.0;
+switch (tipoCliente) {
+    case 1:
+        tarifaPagar = minutos * 0.05;
+        break;
+    case 2:
+        tarifaPagar = minutos * 0.03;
+        break;
+    case 3:
+        tarifaPagar = 1.00;
+        break;
+    default:
+        System.out.println("Opción no válida. Aplicando tarifa Regular por defecto.");
+        tarifaPagar = minutos * 0.05;
+        break;
+}
+
+System.out.printf("Tarifa calculada para este ticket: $%.2f\n", tarifaPagar);
+```
+---
