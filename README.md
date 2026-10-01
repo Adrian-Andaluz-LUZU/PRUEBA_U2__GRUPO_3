@@ -45,3 +45,25 @@ public class Ejercicio3 {
         scanner.close();
     }
 }
+```
+---
+### Paulo Escobar : Validacion de Datos e Ingreso de Placa
+* **Descripcion:** Desarrollo del ingreso de la placa del vehiculo e implementacion del bucle do-while para la validacion estricta del tiempo de permanencia (minutos > 0).
+* **Commit:** `"Implementa lectura de placa y validacion de minutos con do-while"`
+
+#### Codigo Implementado en Java:
+```java
+System.out.print("Ingrese la placa del vehiculo: ");
+String placa = scanner.nextLine();
+
+// Validacion de minutos (> 0) mediante do-while
+int minutos = 0;
+do {
+    System.out.print("Ingrese los minutos de permanencia (debe ser > 0): ");
+    minutos = scanner.nextInt();
+    if (minutos <= 0) {
+        System.out.println("Error! Los minutos deben ser mayores a 0. Intente de nuevo.");
+    }
+} while (minutos <= 0);
+```
+---
