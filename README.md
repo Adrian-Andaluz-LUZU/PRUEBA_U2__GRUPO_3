@@ -19,7 +19,7 @@ Desarrollo de un sistema en Java para el control de boletos de estacionamiento. 
    ```bash
    javac Ejercicio3.java
 ---
-## 4. Distribución de Aportes y Commits por Integrante
+## . Distribución de Aportes y Commits por Integrante
 
 ### Adrián Andaluz: Estrategia y Estructura Base
 - **Aporte:** Creación del repositorio en GitHub, inicialización de la lectura de datos con `Scanner` y configuración del ciclo principal `for` para procesar $N$ tickets.
