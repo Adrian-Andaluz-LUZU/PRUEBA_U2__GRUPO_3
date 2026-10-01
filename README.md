@@ -67,7 +67,7 @@ do {
 } while (minutos <= 0);
 ```
 ---
-### Integrante 3: Menú de Clientes y Cálculo de Tarifas
+### Ariel Chanatasig : Menú de Clientes y Cálculo de Tarifas
 
 * **Aporte:** Desarrollo del menú interactivo para la selección del tipo de cliente y cálculo de las tarifas aplicando una estructura condicional múltiple `switch`.
 * **Commit:** `"Implementa menu de clientes y calculo de tarifas mediante switch"`
