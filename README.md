@@ -3,7 +3,7 @@
 - Adrián Andaluz
 - Paulo Escobar
 - Mateo Salazar
--Ariel Chanatasig
+- Ariel Chanatasig
 
 **Carrera:** Ingeniería en Software  
 **Universidad:** Universidad Técnica de Ambato
