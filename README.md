@@ -104,3 +104,55 @@ switch (tipoCliente) {
 System.out.printf("Tarifa calculada para este ticket: $%.2f\n", tarifaPagar);
 ```
 ---
+## Integrante 4: Métricas, Acumuladores y Reporte Final
+
+### Aporte
+
+Implementación de acumuladores para registrar el ingreso total y los minutos acumulados. También se implementó el contador de tickets, la búsqueda del menor tiempo de permanencia junto con la placa correspondiente, el cálculo del promedio y el despliegue del resumen final de resultados.
+
+### Commit
+
+`Agrega acumuladores, calculo de menor tiempo, promedio y resultados final`
+
+### Código Implementado
+
+```java
+// Variables globales
+double ingresoTotal = 0.0;
+int totalMinutos = 0;
+int cantidadTickets = 0;
+int menorTiempo = Integer.MAX_VALUE;
+String placaMenorTiempo = "";
+
+// Dentro del ciclo for
+ingresoTotal += tarifaPagar;
+totalMinutos += minutos;
+cantidadTickets++;
+
+if (minutos < menorTiempo) {
+    menorTiempo = minutos;
+    placaMenorTiempo = placa;
+}
+
+// Salida al finalizar el bucle
+System.out.println("\n================ RESUMEN DEL DÍA ================");
+System.out.printf("Ingreso total recaudado: $%.2f\n", ingresoTotal);
+
+if (cantidadTickets > 0) {
+    double promedioPermanencia = (double) totalMinutos / cantidadTickets;
+
+    System.out.printf(
+        "Promedio de permanencia: %.2f minutos\n",
+        promedioPermanencia
+    );
+
+    System.out.println(
+        "Vehículo con menor tiempo: Placa " 
+        + placaMenorTiempo + " (" 
+        + menorTiempo + " minutos)"
+    );
+} else {
+    System.out.println("No se registraron tickets.");
+}
+```
+---
