@@ -18,3 +18,30 @@ Desarrollo de un sistema en Java para el control de boletos de estacionamiento. 
 2. Compilar el programa:
    ```bash
    javac Ejercicio3.java
+---
+## 4. Distribución de Aportes y Commits por Integrante
+
+### Adrián Andaluz: Estrategia y Estructura Base
+- **Aporte:** Creación del repositorio en GitHub, inicialización de la lectura de datos con `Scanner` y configuración del ciclo principal `for` para procesar $N$ tickets.
+- **Commit:** `"Crea estructura base con Scanner e inicio de ciclo principal"`
+- **Código implementado:**
+```java
+import java.util.Scanner;
+
+public class Ejercicio3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("=== SISTEMA PARKCONTROL: ESTACIONAMIENTO ===");
+        System.out.print("Ingrese la cantidad de tickets a procesar (N): ");
+        int totalTickets = scanner.nextInt();
+        scanner.nextLine();
+
+        for (int i = 1; i <= totalTickets; i++) {
+            System.out.println("\n--- REGISTRO DEL TICKET #" + i + " ---");
+            // Estructura lista para procesar los tickets
+        }
+
+        scanner.close();
+    }
+}
